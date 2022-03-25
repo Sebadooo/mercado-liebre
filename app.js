@@ -8,7 +8,7 @@ const publicPath = path.resolve(__dirname, './public')
 app.use(express.static(publicPath));
 
 app.listen(port, () => {
-    console.log("Servidor activado")
+    console.log("Servidor activado en puerto " + port)
 });
 
 app.get('/', (req, res) => {
